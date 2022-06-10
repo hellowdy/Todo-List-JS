@@ -9,6 +9,12 @@ todoButton.addEventListener('click', addTodo);
 //FUNCTIONS
 function addTodo(event){
     event.preventDefault();
-    //Todo DIV
-    const todoDiv = document.createElement('div');
+    //Todo Div
+    const todoDiv = document.createElement("div");
+    todoDiv.classList.add("todo");
+    //Creer le li
+    const newTodo = document.createElement('li');
+    newTodo.innerText = "Hey";
+    newTodo.classList.add('todo-item');
+    todoDiv.appendChild(newTodo);
 }
