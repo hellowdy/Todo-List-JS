@@ -17,4 +17,14 @@ function addTodo(event){
     newTodo.innerText = "Hey";
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
+    //Bouton check
+    const completedButton = document.createElement('button');
+    completedButton.innerHTML = '<i class="fas fa-check"></i>';
+    completedButton.classList.add('complete-btn');
+    todoDiv.appendChild(completedButton);
+    //Bouton supprimer
+    const trashButton = document.createElement('button');
+    trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+    trashButton.classList.add('trash-btn');
+    todoDiv.appendChild(trashButton);
 }
