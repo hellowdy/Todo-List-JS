@@ -27,4 +27,6 @@ function addTodo(event){
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add('trash-btn');
     todoDiv.appendChild(trashButton);
+    //AJOUTER NOTRE TODO à TODO-LIST
+    todoList.appendChild(todoDiv);
 }
